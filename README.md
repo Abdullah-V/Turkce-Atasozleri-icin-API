@@ -23,7 +23,6 @@
  axios.post("https://turkce-atasozleri-api.herokuapp.com/")
     .then(result => {
         console.log(result.data);
-        res.send(result.data)
     })
 
 // Cikti: Hic bir parametre verilmedigi icin tum atasozlerini alfabetik bir sekilde bolunmus olarak getirir
@@ -35,7 +34,6 @@
  axios.post("https://turkce-atasozleri-api.herokuapp.com/",{limit:15}) // limit parametresi calismaz
     .then(result => {
         console.log(result.data);
-        res.send(result.data)
     })
 
 // Çıktı:
@@ -47,7 +45,6 @@
 axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],splitted:false}) 
     .then(result => {
         console.log(result.data);
-        res.send(result.data)
     })
 
 // Çıktı:
@@ -59,7 +56,6 @@ axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],
 axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a"],limit:13})
     .then(result => {
         console.log(result.data);
-        res.send(result.data)
     })
 // a harfi ile baslayan 13 atsozu getirir
 ```
@@ -71,7 +67,6 @@ axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a"],limit:13
 axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],limit:200})
     .then(result => {
         console.log(result.data);
-        res.send(result.data)
     })
 
 // Çıktı: a,b ve e harfleri ile baslayan 200 atasozu getirir.(a ve b harflerinde atasozu cok oldugu icin bu kod e harfini getirmez(limiti kaldirin ve ya artirin))
@@ -84,7 +79,6 @@ axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],
 axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],splitted:false}) // Yanlis parametre fakat calisir
     .then(result => {
         console.log(result.data);
-        res.send(result.data)
     })
 
 // Çıktı: a,b ve e harfleri ile baslayan tum atasozlerini getirir(Yanlis parametre fakat calisir) 
@@ -98,7 +92,6 @@ axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],
 axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],splitted:false})
     .then(result => {
         console.log(result.data);
-        res.send(result.data)
     })
 
 // Çıktı: a,b ve e harfleri ile baslayan tum atasozlerini getirir(Dogru parametre) 
