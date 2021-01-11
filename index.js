@@ -1444,7 +1444,7 @@ const DATA = {
 
 
 app.get("/",(req,res) => {
-    res.send("<a href='https://github.com/Abdullah-V'>Dokümantasyon için tıklayın</a>")
+    res.send("<a href='https://github.com/Abdullah-V/Turkce-Atasozleri-icin-API'>Dokümantasyon için tıklayın</a>")
 })
 
 
