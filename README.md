@@ -7,7 +7,9 @@
 |----------|-------|:--------------------:| --- |
 | `splitted` | Dönen cevabın alfabetik olarak <br> bölünüp bölünmeyeceğini tanımlar | `true`,`false` | `true` |
 | `letter` | Sadece belirtilen harfle başlayan <br> atasözlerini getirir | `a`-dan  `z`-ye kadar tüm harfler.Liste vermeniz gerekmektedir.Listeye birden fazla harfde vere bilirsiniz | Hiçbir değer vermediğiniz takdirde tüm harfler gelicek |
-| `limit` | Dönen listenin uzunluğunu tanımlar. | sayı | Değer vermediğiniz takdirde hicbir kisitlama olmayacaktir. |
+| `limit` | Dönen listenin uzunluğunu tanımlar.Bu parametrenin çalışması için `splitted` parametresinin `false` olması gerekir. | sayı | Değer vermediğiniz takdirde hicbir kisitlama olmayacaktir. |
+
+
 
 <!-- | `random` | Dönen atasözlerinin rastgele olup olmayacağını tanımlar.Eger `letter` parametresi verdiyseniz sadece sectiginiz harfden rastgele atasozleri gelicek | `true`,`false` | `false` | -->
 <!-- ### NOT : `splitted` === `false` oldugu durumlarda `letter` parametresini vermemelisiniz. -->
@@ -93,7 +95,7 @@ axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],
 ## Özerllikler
 * Tahminen 1400 atasözü
 * Günün her saati aktif
-* Dokümantasyonümantasyon
+* Dokümantasyon
 * Örnekler
 * Özerlleştirilebilir
 * Açık kaynak
