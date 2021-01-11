@@ -1,0 +1,21 @@
+{
+  "name": "trial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "nodemon test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jssoup": "0.0.12"
+  }
+}
