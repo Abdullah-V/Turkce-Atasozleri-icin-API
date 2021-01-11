@@ -1,7 +1,7 @@
 # Türkçe atasözleri için APİ
 ## Kullanım
 #### APİ URL : https://turkce-atasozleri-api.herokuapp.com/
-#### İstek tipi : `POST`
+#### HTTP istek tipi : `POST`
 ### Parametreler 
 | İsim     | Tanım | Alabileceği değerler | Varsaılan değer |
 |----------|-------|:--------------------:| --- |
@@ -15,7 +15,20 @@
 <!-- ### NOT : `splitted` === `false` oldugu durumlarda `letter` parametresini vermemelisiniz. -->
 
 ## Örnekler
-### NOT : Kolaylık olması açısından örneklerde `axios` kütüphanesini kullandım.`axios`-u `npm i --save axios` komutuyla indire bilirsiniz.
+#### NOT : Kolaylık olması açısından örneklerde `axios` kütüphanesini kullandım.`axios`-u `npm i --save axios` komutuyla indire bilirsiniz.
+
+
+
+```js
+ axios.post("https://turkce-atasozleri-api.herokuapp.com/")
+    .then(result => {
+        console.log(result.data);
+        res.send(result.data)
+    })
+
+// Cikti: Hic bir parametre verilmedigi icin tum atasozlerini alfabetik bir sekilde bolunmus olarak getirir
+```
+
 
 
 ```js
@@ -92,12 +105,12 @@ axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],
 ```
 
 
-## Özerllikler
+## Özellikler
 * Tahminen 1400 atasözü
 * Günün her saati aktif
 * Dokümantasyon
 * Örnekler
-* Özerlleştirilebilir
+* Özelleştirilebilir
 * Açık kaynak
 * İlk ve tek
 
