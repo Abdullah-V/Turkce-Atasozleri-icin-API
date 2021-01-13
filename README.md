@@ -3,7 +3,7 @@
 #### APİ URL : https://turkce-atasozleri-api.herokuapp.com/
 #### HTTP istek tipi : `POST`
 ### Parametreler 
-| İsim     | Tanım | Alabileceği değerler | Varsaılan değer |
+| İsim     | Tanım | Alabileceği değerler | Varsayılan değer |
 |----------|-------|:--------------------:| --- |
 | `splitted` | Dönen cevabın alfabetik olarak <br> bölünüp bölünmeyeceğini tanımlar | `true`,`false` | `true` |
 | `letter` | Sadece belirtilen harfle başlayan <br> atasözlerini getirir | `a`-dan  `z`-ye kadar tüm harfler.Liste vermeniz gerekmektedir.Listeye birden fazla harfde vere bilirsiniz | Hiçbir değer vermediğiniz takdirde tüm harfler gelicek |
@@ -25,7 +25,8 @@
         console.log(result.data);
     })
 
-// Cikti: Hic bir parametre verilmedigi icin tum atasozlerini alfabetik bir sekilde bolunmus olarak getirir
+// Çıktı:
+// Hiç bir parametre verilmediği için tüm atasözlerini alfabetik bir şekilde bölünmüs olarak getirir
 ```
 
 
