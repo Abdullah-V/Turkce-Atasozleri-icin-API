@@ -106,7 +106,6 @@ axios.post("https://turkce-atasozleri-api.herokuapp.com/",{letter:["a","b","e"],
 * Örnekler
 * Özelleştirilebilir
 * Açık kaynak
-* İlk ve tek
 
 
 
